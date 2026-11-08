@@ -1,0 +1,12 @@
+PORTFOLIO DE FITIA : mode d'emploi rapide
+
+OÙ CHANGER QUOI ?
+- js/config.js    -> TES LIENS (GitHub, WhatsApp, e-mail, LinkedIn, Instagram, Facebook),
+                     les liens GitHub de chaque projet et ta STACK. Cherche les repères ✏️.
+                     Un lien laissé vide ("") disparaît du site.
+- assets/photo.png -> ta photo (PNG sans fond). Remplace le fichier en gardant le même nom.
+- assets/cv.pdf    -> ton CV. Remplace le fichier en gardant le même nom.
+- index.html      -> les textes. Chaque grande partie a un titre en commentaire (<!-- 1. ACCUEIL --> ...).
+- css/style.css   -> les couleurs : bloc :root tout en haut.
+
+POUR VOIR LE SITE : double-clique sur index.html.

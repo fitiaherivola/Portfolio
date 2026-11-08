@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fitia Herivola Raharijaona – Portfolio</title>
+<meta name="description" content="Étudiante en génie logiciel, à la recherche d’un stage en informatique dès décembre 2026.">
+<meta name="theme-color" content="#14060f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500;1,9..144,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="g-top" viewBox="0 0 24 24"><path d="M8 4L3 7l2 4 2-1v10h10V10l2 1 2-4-5-3a4 4 0 0 1-8 0z" fill="currentColor"/></symbol>
+<symbol id="g-pant" viewBox="0 0 24 24"><path d="M7 3h10l1 18h-4l-2-10-2 10H6z" fill="currentColor"/></symbol>
+<symbol id="g-dress" viewBox="0 0 24 24"><path d="M9 3h6l-1 5 4 13H6l4-13z" fill="currentColor"/></symbol>
+<symbol id="g-shoe" viewBox="0 0 24 24"><path d="M3 15l5-2 3 2h7a3 3 0 0 1 3 3v1H3z" fill="currentColor"/></symbol>
+</defs></svg>
+
+<header class="top">
+    <nav aria-label="Navigation">
+    <a href="#apropos">À propos</a><a href="#stack">Stack</a><a href="#projets">Projets</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ============ 1. ACCUEIL ============ -->
+<section class="hero" id="haut">
+  <h1 class="name n-left">Fitia</h1>
+
+  <div class="figure">
+    <!-- ✏️ PHOTO : remplace le fichier assets/photo.png (PNG sans fond) -->
+    <img src="assets/photo.png" width="433" height="577" alt="Portrait de Fitia Herivola Raharijaona">
+  </div>
+
+  <div class="name n-right">
+    <span class="h1like">Herivola</span>
+    
+  </div>
+
+  <div class="intro">
+    <p>Étudiante en 3ᵉ année de licence, je transforme les besoins d’une organisation en applications simples et fiables.</p>
+    <!-- ✏️ CONTACTS : les icônes se remplissent depuis js/config.js -->
+    <div class="icons" data-contact-icons></div>
+    <a class="btn" data-cv>Télécharger mon CV</a>
+  </div>
+</section>
+
+<main>
+<!-- ============ 2. À PROPOS ============ -->
+<section class="sec" id="apropos">
+  <h2>À propos de moi</h2>
+  <div class="about">
+    <p class="lead">J’aime comprendre ce dont les gens ont besoin, le dessiner proprement, puis le construire jusqu’à ce que ça marche vraiment.</p>
+    <div>
+      <p>Je suis en 3ᵉ année de Licence en Informatique, parcours Services Informatiques aux Organisations, Génie Logiciel, à ESMIA INNOVATION (Antananarivo). Le développement d’applications et la gestion de projet sont ce qui me passionne le plus.</p>
+      <p>Autonome, polyvalente et à l’aise pour synthétiser, je cherche un stage pour rejoindre une équipe, travailler sur de vrais projets et améliorer des processus numériques.</p>
+      <p>Hors du code, je suis vice-présidente de l’Association Vie Étudiante, où je m’occupe de l’art oratoire. Ça m’aide à présenter mes idées clairement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. CE QUE JE FAIS ============ -->
+<section class="sec" id="faire">
+  <h2>Ce que je sais faire</h2>
+  <div class="rows">
+    <article><h3>Sites et applications web</h3><p>Des interfaces claires reliées à une API, avec Django REST, Spring Boot, Laravel, React, Vue.js ou Angular.</p></article>
+    <article><h3>Applications mobiles</h3><p>Des applications Android, créées avec Android Studio.</p></article>
+    <article><h3>Données et sécurité</h3><p>Bases MySQL, PostgreSQL et SQLite. Connexion sécurisée avec JWT, mots de passe protégés avec bcrypt.</p></article>
+    <article><h3>Organisation de projet</h3><p>Cadrage du besoin, schémas MERISE et UML, maquettes Figma, suivi du travail d’équipe avec Git et GitHub.</p></article>
+  </div>
+</section>
+
+<!-- ============ 4. STACK ============ -->
+<!-- ✏️ La liste des technos est dans js/config.js (section STACK) -->
+<section class="sec" id="stack">
+  <h2>Ma stack</h2>
+  <div class="stack" id="stack-list"></div>
+</section>
+
+<!-- ============ 5. PROJETS ============ -->
+<!-- ✏️ Les boutons GitHub des projets se règlent dans js/config.js (PROJECT_LINKS) -->
+<section class="sec" id="projets">
+  <h2>Mes projets</h2>
+
+  <article class="proj feature">
+    <div>
+      <h3>Mi-bika</h3>
+      <p class="sub">Ma garde-robe, organisée</p>
+      <p>Une application pour ranger ses vêtements, les retrouver vite et préparer ses tenues. Mon projet transversal, construit sur deux années universitaires (2024 à 2026).</p>
+      <ul class="feat">
+        <li>Compte personnel et connexion sécurisée</li>
+        <li>Catalogue de vêtements classé par catégories</li>
+        <li>Composition de tenues</li>
+      </ul>
+      <ul class="tags"><li>Django REST</li><li>React</li><li>Vue.js</li><li>PostgreSQL</li><li>MySQL</li><li>JWT</li><li>bcrypt</li></ul>
+      <a class="repo" data-repo="mibika">Voir le code</a>
+    </div>
+    <figure class="mock">
+      <div class="phones" aria-hidden="true">
+        <div class="phn"><b>Ma garde-robe</b><div class="chips"><span class="on">Tout</span><span>Hauts</span><span>Bas</span><span>Robes</span></div>
+          <div class="gr"><div style="--c:#f25aa2"><svg class="g"><use href="#g-top"/></svg><small>Chemise rose</small></div><div style="--c:#2a2a2e"><svg class="g"><use href="#g-pant"/></svg><small>Pantalon noir</small></div><div style="--c:#c21e6f"><svg class="g"><use href="#g-dress"/></svg><small>Robe</small></div><div style="--c:#7a2a55"><svg class="g"><use href="#g-shoe"/></svg><small>Baskets</small></div><div style="--c:#e9b6cf"><svg class="g"><use href="#g-top"/></svg><small>T-shirt</small></div><div style="--c:#3a3a40"><svg class="g"><use href="#g-dress"/></svg><small>Jupe</small></div></div>
+          <div class="tab"><i class="on"></i><i></i><i></i></div></div>
+        <div class="phn two"><b>Tenue du jour</b><div class="outfit"><div style="--c:#f25aa2"><svg class="g"><use href="#g-top"/></svg></div><div style="--c:#2a2a2e"><svg class="g"><use href="#g-pant"/></svg></div><div style="--c:#7a2a55"><svg class="g"><use href="#g-shoe"/></svg></div></div><span class="cta">Enregistrer la tenue</span></div>
+      </div>
+      <figcaption>Aperçu illustratif de l’interface</figcaption>
+    </figure>
+  </article>
+
+  <div class="two">
+    <article class="proj">
+      <figure class="win" aria-hidden="true"><div class="bar"><i></i><i></i><i></i><span>Livraisons</span></div>
+        <div class="stats"><div><b>24</b>aujourd’hui</div><div><b>9</b>en cours</div><div><b>15</b>livrées</div></div>
+        <table><tr><td>#1042</td><td>Analakely</td><td><em class="s1">En cours</em></td></tr><tr><td>#1041</td><td>Ivandry</td><td><em class="s2">Livrée</em></td></tr><tr><td>#1039</td><td>Andohalo</td><td><em class="s3">En attente</em></td></tr></table>
+        <figcaption>Aperçu illustratif</figcaption></figure>
+      <h3>Gestion de livraison</h3>
+      <p>Suivre chaque livraison jusqu’à son état d’avancement, en Java et Spring Boot.</p>
+      <ul class="tags"><li>Java</li><li>Spring Boot</li><li>API REST</li><li>MySQL</li><li>Postman</li></ul>
+      <a class="repo" data-repo="livraison">Voir le code</a>
+    </article>
+    <article class="proj">
+      <figure class="win" aria-hidden="true"><div class="bar"><i></i><i></i><i></i><span>Tournoi</span></div>
+        <div class="bk"><div class="rd"><p>Équipe A</p><p>Équipe B</p><p>Équipe C</p><p>Équipe D</p></div><div class="rd mid"><p>Équipe A</p><p>Équipe C</p></div><div class="rd"><p class="w">Équipe A</p></div></div>
+        <figcaption>Aperçu illustratif</figcaption></figure>
+      <h3>Gestion de tournoi</h3>
+      <p>Participants, rencontres et résultats réunis au même endroit, avec le même socle Java et Spring Boot.</p>
+      <ul class="tags"><li>Java</li><li>Spring Boot</li><li>API REST</li><li>MySQL</li></ul>
+      <a class="repo" data-repo="tournoi">Voir le code</a>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 6. PARCOURS ============ -->
+<section class="sec" id="parcours">
+  <h2>Mon parcours</h2>
+  <ol class="tl">
+    <li><time>2026</time><div><h3>3ᵉ année de Licence, Génie Logiciel (SIO), ESMIA INNOVATION</h3><p>Java (Spring Boot), Python (Django), PHP (Laravel) et JavaScript (Angular). Développement mobile, ingénierie des données, cryptographie et intelligence artificielle.</p></div></li>
+    <li><time>2025</time><div><h3>2ᵉ année de Licence SIO, tronc commun, ESMIA INNOVATION</h3><p>Gestion de projet, programmation orientée objet avancée, Python, statistiques, bases de données, initiation aux réseaux, principes du management.</p></div></li>
+    <li><time>2023</time><div><h3>Baccalauréat série D, ACCEM Analamahintsy</h3><p>Filière scientifique : mathématiques et sciences de la vie et de la terre.</p></div></li>
+  </ol>
+</section>
+
+<!-- ============ 7. MÉTHODE ============ -->
+<section class="sec" id="methode">
+  <h2>Ma façon de travailler</h2>
+  <ol class="steps">
+    <li><h3>Comprendre</h3><p>J’écoute le besoin, je pose des questions et je définis ce que l’application doit permettre.</p></li>
+    <li><h3>Modéliser</h3><p>Schéma de données MERISE, diagrammes UML et maquettes Figma.</p></li>
+    <li><h3>Développer</h3><p>API, interface et base de données, avec Git pour garder l’historique de chaque changement.</p></li>
+    <li><h3>Tester et livrer</h3><p>Tests des routes avec Postman, puis mise en place avec Docker.</p></li>
+  </ol>
+</section>
+
+<!-- ============ 8. EN DEHORS DU CODE ============ -->
+<section class="sec" id="plus">
+  <h2>En dehors du code</h2>
+  <div class="cols">
+    <div><h3>Langues</h3><ul class="plain"><li>Malagasy <span>langue maternelle</span></li><li>Français <span>avancé</span></li><li>Anglais <span>intermédiaire</span></li></ul></div>
+    <div><h3>Qualités</h3><ul class="plain"><li>Organisée</li><li>Autodidacte</li><li>Sens de la responsabilité</li><li>Adaptabilité</li></ul></div>
+    <div><h3>Vie associative</h3><p>Vice-présidente de l’Association Vie Étudiante, en charge de l’art oratoire.</p></div>
+    <div><h3>Centres d’intérêt</h3><p>Lecture, pétanque et jeux vidéo.</p></div>
+  </div>
+</section>
+</main>
+
+<!-- ============ 9. CONTACT ============ -->
+<!--  Les cartes se remplissent depuis js/config.js (section CONTACTS) -->
+<footer class="sec contact" id="contact">
+  <h2>On travaille ensemble ?</h2>
+  <p class="lead">Je suis disponible pour un stage en informatique dès décembre 2026. Écris-moi, je réponds vite.</p>
+  <div class="cards" data-contact-cards></div>
+  <a class="btn" data-cv>Télécharger mon CV</a>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
